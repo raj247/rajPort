@@ -16,14 +16,11 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/grayscale.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,29 +31,32 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Raj UI Developer</a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Raj</span> UI Developer
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio"> </a>
+                        <a class="page-scroll" href="#Projects">Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -65,100 +65,88 @@
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.container -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <h1> RAJ </h1>
-            <h2>UI DEVELOPER</h2>
-
-
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading"> Raj sekhar</h1>
+                        <p class="intro-text">UI Developer</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">About MySelf</h2>
-                    <hr class="light">
-                    <p>Software UI engineer with 8 years of experience in HTML, CSS, JavaScript, JQUERY, AJAX, XML, JSON and Bootstrap development implementing enterprise applications in team-oriented environments.</p>
-<p>•   Strong understanding and excellent skills in developing, professional, AJAX driven elegant enterprise web application using HTML/ HTML5, CSS/ CSS3, JS and JQUERY, and various java and JavaScript design patterns.</p>
-<p>•   Strong experience in working on user interface applications and professional web applications using HTML, 
-HTML5, CSS, CSS3, JavaScript, JQUERY, AJAX, JSON, AngularJS, Node.js, Backbone.JS, D3.JS etc.</p>
-<p>•   Developed, Configured and Deployed a variety of Portals and UI Applications including HTML, CSS3 and
- JavaScript.</p>
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Myself</h2>
+                <p>Software UI engineer with 8 years of experience in HTML, CSS, JavaScript, JQUERY, AJAX, XML, JSON and Bootstrap development implementing enterprise applications in team-oriented environments.
 
-                    
+• Strong understanding and excellent skills in developing, professional, AJAX driven elegant enterprise web application using HTML/ HTML5, CSS/ CSS3, JS and JQUERY, and various java and JavaScript design patterns.
+
+• Strong experience in working on user interface applications and professional web applications using HTML, HTML5, CSS, CSS3, JavaScript, JQUERY, AJAX, JSON, AngularJS, Node.js, Backbone.JS, D3.JS etc.
+
+• Developed, Configured and Deployed a variety of Portals and UI Applications including HTML, CSS3 and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="Projects" class="content-section text-center">
+        <div class="Projects-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                       <h2>FedEx</h2>
+                       <h2>Apple</h2>
+                       <h2>HP</h2>
+                       <h2>AT&T</h2>
+                       <h2>Macy's</h2>
+                       <h2>CapGemini</h2>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projects</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <h1>FedEx</h1>
-                    <h1>Apple</h1>
-                    <h1>HP</h1>
-                    <h1>AT&T<h1>
-                    <h1>Macy's<h1>
-                    <h1>CapGemini<h1>
-
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-
-    
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p> Reach me @</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact </h2>
+                <h>Let's Get In Touch!</h>
+                <p><a href="mailto:raj.247277@gmail.com">mail to:raj.247277@gmail.com</a>
+                </p>
+                <div class="col-lg-4 col-lg-offset-4 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
                     <p>510-676-4326</p>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">raj.247277@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+                
+
+   
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/grayscale.min.js"></script>
 
 </body>
 
